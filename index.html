@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Campamento Sin Filtros</title>
+
+
+    <!-- =================================
+            GOOGLE FONTS
+    ================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =================================
+            FONT AWESOME
+    ================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =================================
+            CSS
+    ================================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+            FONDO PRINCIPAL
+    ================================== -->
+
+    <div id="background"></div>
+
+
+    <!-- =================================
+            LÍNEAS DIGITALES
+    ================================== -->
+
+    <div id="digitalLines"></div>
+
+
+    <!-- =================================
+            REDES SOCIALES
+    ================================== -->
+
+    <div id="socialBackground"></div>
+
+
+    <!-- =================================
+            EFECTOS VISUALES
+    ================================== -->
+
+    <div class="scanlines"></div>
+
+    <div class="noise"></div>
+
+    <div id="flash"></div>
+
+
+
+    <!-- =================================
+            PANTALLA 1
+            INICIO
+    ================================== -->
+
+    <section id="screen1"
+             class="screen active">
+
+
+        <div class="content">
+
+
+            <h1 id="title"
+                data-text="VIVIR CON FILTROS CANSA.">
+
+                VIVIR CON<br>
+
+                FILTROS<br>
+
+                CANSA.
+
+            </h1>
+
+
+
+            <p id="subtitle">
+
+                Pasamos el día ocultando
+                quiénes realmente somos.
+
+                <br><br>
+
+                ¿Y si por un fin de semana
+                dejamos las apariencias
+                y descubrimos quiénes somos
+                delante de Dios?
+
+            </p>
+
+
+
+            <button id="btnReveal"
+                    type="button">
+
+                <span>
+
+                    PRESIONA AQUÍ
+
+                </span>
+
+
+                <small>
+
+                    PARA QUITAR FILTROS
+
+                </small>
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+            PANTALLA DE INTERFERENCIA
+    ================================== -->
+
+    <section id="signalScreen"
+             class="screen">
+
+
+        <div class="signalLines"></div>
+
+        <div class="signalNoise"></div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+            PANTALLA 2
+            FLYER FINAL
+    ================================== -->
+
+    <section id="screen2"
+             class="screen">
+
+
+        <!-- FLYER -->
+
+        <div class="flyer">
+
+
+            <img src="img/flyer.jpg"
+                 class="flyer-img"
+                 alt="Flyer del Campamento Sin Filtros">
+
+
+        </div>
+
+
+
+        <!-- VERSÍCULO -->
+
+        <div class="verse">
+
+
+            <p>
+
+                "Por tanto, nosotros todos,
+                mirando a cara descubierta
+                como en un espejo la gloria del Señor,
+                somos transformados de gloria en gloria
+                en la misma imagen."
+
+            </p>
+
+
+
+            <h2>
+
+                2 CORINTIOS 3:18
+
+            </h2>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+            PANTALLA 3
+            INSCRIPCIÓN
+    ================================== -->
+
+    <section id="screen3"
+             class="screen">
+
+
+        <!-- =================================
+                EFECTO DE SEÑAL
+        ================================== -->
+
+        <div class="finalSignal">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <i class="fa-solid fa-tower-broadcast"></i>
+
+        </div>
+
+
+
+        <!-- =================================
+                CONTENIDO FINAL
+        ================================== -->
+
+        <div class="registerContent">
+
+
+            <!-- MENSAJE SUPERIOR -->
+
+            <p class="registerTag">
+
+                LA SEÑAL YA ESTÁ RESTAURADA
+
+            </p>
+
+
+
+            <!-- TÍTULO PRINCIPAL -->
+
+            <h2 class="registerTitle">
+
+                ¡NO TE LO
+
+                <span>
+
+                <span class="titleGreen">    
+                    PIERDAS!
+
+                </span>
+
+            </h2>
+
+
+
+            <!-- MENSAJE -->
+
+            <p class="registerText">
+
+                Es momento de dejar las apariencias
+                y vivir algo real.
+
+            </p>
+
+
+
+            <!-- BOTÓN DE RESERVA -->
+
+            <a href="https://forms.gle/YqS8KA9y7UrPNbyG6"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="registerButton">
+
+               <span>
+
+                RESERVA TU LUGAR
+
+                <span>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+            PANTALLA DE CARGA
+    ================================== -->
+
+    <div id="loading">
+
+
+        <!-- MATRIX -->
+
+        <canvas id="matrix"></canvas>
+
+
+
+        <!-- CONTENIDO DE CARGA -->
+
+        <div class="loadingContent">
+
+
+            <h2 id="loadingTitle">
+
+                ELIMINANDO FILTROS...
+
+            </h2>
+
+
+
+            <div id="loadingBar">
+
+
+                <div id="progress"></div>
+
+
+            </div>
+
+
+
+            <p id="loadingText">
+
+                Conectando...
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =================================
+            SISTEMA DE AUDIO
+    ================================== -->
+
+
+    <!-- AMBIENTE GENERAL -->
+
+    <audio id="soundAmbient"
+           src="audio/ambient.mp3"
+           preload="auto">
+
+    </audio>
+
+
+
+    <!-- SONIDO DEL BOTÓN -->
+
+    <audio id="soundClick"
+           src="audio/click.mp3"
+           preload="auto">
+
+    </audio>
+
+
+
+    <!-- SONIDO DE CARGA -->
+
+    <audio id="soundLoading"
+           src="audio/loading.mp3"
+           preload="auto">
+
+    </audio>
+
+
+
+    <!-- SONIDO DE INTERFERENCIA -->
+
+    <audio id="soundStatic"
+           src="audio/static.mp3"
+           preload="auto">
+
+    </audio>
+
+
+
+    <!-- SONIDO DE REVELACIÓN -->
+
+    <audio id="soundReveal"
+           src="audio/reveal.mp3"
+           preload="auto">
+
+    </audio>
+
+
+
+    <!-- =================================
+            JAVASCRIPT
+    ================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
